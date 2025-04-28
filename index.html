@@ -1,0 +1,172 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organizador de Cursada</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header>
+      <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <button
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                onclick="toggleMenu()"
+              >
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+
+                <svg
+                  class="block size-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+
+                <svg
+                  class="hidden size-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch">
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a
+                    href="index.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+                    >Home</a
+                  >
+                  <a
+                    href="avisos.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+                  >
+                    Avisos
+                  </a>
+                  <a
+                    href="sobre-mi.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-red [aria-current=page]:text-white"
+                    >Sobre mi</a
+                  >
+                  <a
+                    href="materias-2025.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+                    >Materias 2025</a
+                  >
+                  <a
+                    href="contacto.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+                    >Contacto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:hidden hidden" id="mobile-menu">
+          <div class="flex flex-col space-y-1 px-2 pt-2 pb-3">
+            <a
+              href="index.html"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+              >Home</a
+            >
+            <a
+              href="avisos.html"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+            >
+              Avisos
+            </a>
+            <a
+              href="sobre-mi.html"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-red [aria-current=page]:text-white"
+              >Sobre mi</a
+            >
+            <a
+              href="materias-2025.html"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+              >Materias 2025</a
+            >
+            <a
+              href="contacto.html"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+              >Contacto</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow flex-col items-center justify-center">
+      <h1 class="text-2xl">Bienvenido a tu Organizador de Cursada</h1>
+
+      <table border="1">
+        <tr>
+          <th>Materia</th>
+          <th>Día</th>
+          <th>Horario</th>
+        </tr>
+        <tr>
+          <td>Testing de apliaciones</td>
+          <td>Lunes</td>
+          <td>18:30 - 20:30</td>
+        </tr>
+        <tr>
+          <td>Diseño y Desarrollo Web</td>
+          <td>Martes</td>
+          <td>18:30 - 20:30</td>
+        </tr>
+        <tr>
+          <td>Paradigma orientado a objetos</td>
+          <td>Miercoles</td>
+          <td>18:30 - 20:30</td>
+        </tr>
+      </table>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-body">&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const currentPage = window.location.pathname.split("/").pop() || "index.html"
+      const links = document.querySelectorAll("#mobile-menu a, .sm\\:block a") // Todos los links
+
+      links.forEach((link) => {
+        const href = link.getAttribute("href")
+        if (href === currentPage) {
+          link.classList.add("bg-gray-900", "text-white", "rounded-md", "p-2")
+          link.classList.remove("text-gray-300")
+        }
+      })
+    })
+    function toggleMenu() {
+      const mobileMenu = document.getElementById("mobile-menu")
+      const button = document.querySelector('button[onclick="toggleMenu()"]')
+      const icons = button.querySelectorAll("svg")
+      mobileMenu.classList.toggle("hidden")
+      icons.forEach((icon) => icon.classList.toggle("hidden"))
+    }
+  </script>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseño y Desarrollo Web</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header>
+      <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <button
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                onclick="toggleMenu()"
+              >
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+
+                <svg
+                  class="block size-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+
+                <svg
+                  class="hidden size-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch">
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a
+                    href="index.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+                    >Home</a
+                  >
+                  <a
+                    href="avisos.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+                  >
+                    Avisos
+                  </a>
+                  <a
+                    href="sobre-mi.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-red [aria-current=page]:text-white"
+                    >Sobre mi</a
+                  >
+                  <a
+                    href="materias-2025.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+                    >Materias 2025</a
+                  >
+                  <a
+                    href="contacto.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+                    >Contacto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:hidden hidden" id="mobile-menu">
+          <div class="flex flex-col space-y-1 px-2 pt-2 pb-3">
+            <a
+              href="index.html"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+              >Home</a
+            >
+            <a
+              href="avisos.html"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+            >
+              Avisos
+            </a>
+            <a
+              href="sobre-mi.html"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-red [aria-current=page]:text-white"
+              >Sobre mi</a
+            >
+            <a
+              href="materias-2025.html"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+              >Materias 2025</a
+            >
+            <a
+              href="contacto.html"
+              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white [aria-current=page]:bg-gray-900 [aria-current=page]:text-white"
+              >Contacto</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow bg-white shadow-md rounded-md">
+      <h1 class="text-2xl text-center mb-6">Diseño y Desarrollo Web</h1>
+      <div class="flex space-x-4">
+        <div class="flex flex-col space-y-4 flex-1">
+          <div class="border-2 border-gray-300 rounded-lg p-4">
+            <h2 class="text-xl">Fechas de Exámenes</h2>
+            <div class="mt-2">
+              <ul>
+                <li>Parcial 1: 29 de Abril de 2025</li>
+                <li>Parcial 2: 24 de junio de 2025</li>
+                <li>Final anticipado: 08 de julio de 2025</li>
+                <li>Final regular: 22 de julio de 2025</li>
+              </ul>
+            </div>
+          </div>
+          <div class="border-2 border-gray-300 rounded-lg p-4">
+            <h2 class="text-xl">Bibliografía</h2>
+            <div class="mt-2">
+              <ul>
+                <li>
+                  <a class="text-blue-500" href="https://www.w3schools.com/html/default.asp"
+                    >Sitio con ejemplos prácticos para realizar código - W3Schools</a
+                  >
+                </li>
+                <li>
+                  <a class="text-blue-500" href="https://developer.mozilla.org/es/docs/Learn/CSS"
+                    >Sitio online con información detallada sobre uso de CSS – Mozilla</a
+                  >
+                </li>
+                <li>
+                  <a class="text-blue-500" href="https://www.youtube.com/watch?v=XA6xNhfeQSI"
+                    >UX/UI – Youtube</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 border-gray-300 rounded-lg p-4 flex-1">
+          <!-- Se añadió flex-1 aquí también -->
+          <h2 class="text-xl">Actividades UVAs</h2>
+          <div class="my-4">
+            <h3 class="mb-2">UVA 1</h3>
+            <ul>
+              <li>
+                <a href="https://ldelia43.github.io/dyw-4/" class="text-blue-500"
+                  >Actividad 1 - Ejercicio individual: HTML - Introducción</a
+                >
+              </li>
+              <li>
+                <a href="https://ldelia43.github.io/dyw-5/" class="text-blue-500"
+                  >Actividad 2 - Ejercicio individual: HTML - Etiquetas</a
+                >
+              </li>
+              <li>
+                <a href="https://ldelia43.github.io/dyw-1/" class="text-blue-500"
+                  >Actividad 3 - Ejercicio individual: Ejercicio integrador</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="my-4">
+            <h3 class="mb-2">UVA 2</h3>
+            <ul>
+              <li>
+                <a href="https://ldelia43.github.io/dyw-2/" class="text-blue-500"
+                  >Actividad 4 - Ejercicio individual: Formato de texto</a
+                >
+              </li>
+              <li>
+                <a href="https://ldelia43.github.io/dyw-3/" class="text-blue-500"
+                  >Actividad 5 - Ejercicio individual: Formato de cajas</a
+                >
+              </li>
+              <li>
+                <a href="https://ldelia43.github.io/dyw-6/" class="text-blue-500"
+                  >Actividad 6 - Ejercicio individual: Unidades de medida</a
+                >
+              </li>
+              <li>
+                <a href="https://ldelia43.github.io/dyw-7/" class="text-blue-500"
+                  >Actividad 7 - Ejercicio individual: Grid y Flexbox</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Curso: 516035 / Profesora: Patricia Litovicius</p>
+      <p class="footer-body mt-2">&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+  </body>
+  <script>
+    function toggleMenu() {
+      const mobileMenu = document.getElementById("mobile-menu")
+      const button = document.querySelector('button[onclick="toggleMenu()"]')
+      const icons = button.querySelectorAll("svg")
+      mobileMenu.classList.toggle("hidden")
+      icons.forEach((icon) => icon.classList.toggle("hidden"))
+    }
+  </script>
+</html>
