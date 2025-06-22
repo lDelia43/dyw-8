@@ -110,3 +110,69 @@ ul {
   list-style-type: square;
   padding-left: 20px;
 }
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+.form-input:focus {
+  border-color: #ef4444;
+  outline: none;
+  background: #fef2f2;
+}
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+.form-error {
+  color: #dc2626;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.form-success {
+  color: #16a34a;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+body.modo-claro {
+  background: #f8fafc;
+  color: #222;
+}
+body.modo-oscuro {
+  background: #18181b;
+  color: #f3f4f6;
+}
+body.modo-claro .bg-white {
+  background: #fff !important;
+  color: #222 !important;
+}
+body.modo-oscuro .bg-white {
+  background: #27272a !important;
+  color: #f3f4f6 !important;
+}
+body.modo-claro .form-input {
+  background: #fff;
+  color: #222;
+  border-color: #d1d5db;
+}
+body.modo-oscuro .form-input {
+  background: #27272a;
+  color: #f3f4f6;
+  border-color: #52525b;
+}
+/* Reemplaza los selectores de ID por clase */
+.switch-modo:checked + span,
+.switch-modo-desktop:checked + span {
+  background: #18181b;
+}
+.switch-modo:checked + span .switch-ball,
+.switch-modo-desktop:checked + span .switch-ball {
+  transform: translateX(1.25rem);
+  background: #fbbf24;
+}
